@@ -8,13 +8,58 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    
     <title>BOLT's site</title>
+
+    <style>
+        .drop {
+            position: relative;
+        }
+
+        .dropdown-content bl {
+            position:absolute;
+            width: 330px
+        }    
+    
+    </style>
 </head>
 <body>
-    <div class="container grey lighten-1">      
+
+    <nav class="nav-wrapper indigo">
+        <div class="container"> 
+            <a href="#" class="center brand-logo">My awesome site</a>
+
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn waves-effect waves-light' href='#' data-target='dropdown'>Menu</a>
+            <div class="drop indigo">
+                <!-- Dropdown Structure -->
+                <ul id='dropdown' class='dropdown-content bl'>
+                    <li><a href="#">Cinemas
+                            <i class="material-icons right">local_movies</i>    
+                        </a>                   
+                    </li>
+                    <li><a href="#">Movies
+                            <i class="material-icons">movie</i>
+                        </a>                    
+                    </li>
+                    <!--<li class="divider" tabindex="-1"></li>-->
+                    <li><a href="#!">Anime</a></li>
+                    <li><a href="#!">TV Shows
+                            <i class="material-icons">tv</i>   
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">view_module</i>four
+                        </a>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">local_movies</i>five</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <div class="container grey lighten-1">     
+        
         <!--not working
         <a href="" class="right">
             <span>Login</span>
@@ -28,8 +73,6 @@
             <i class="material-icons black-text right">account_circle</i>
         </a>
 
-        <h2 class="center-align">My awesome site</h2>
-
         <p class="flow-text amber-text text-darken-4">
             Awesome quotes:
         </p>
@@ -40,12 +83,28 @@
         <h5 class="">“Everything You’ve Ever Wanted Is On The Other Side Of Fear.”- George Addair</h4>
         
         <div class="container red lighten-1 valign-wrapper">
-            <h5 class="">“CyberPunk 2077. Simply perfect”- Brian Madeup</h4>
+            <h5 class="center">“CyberPunk 2077. Simply perfect”- Brian Madeup</h4>
         </div>
 
         <a class="btn-small blue accent-3">Learn more</a>
         <a href= "/grades.html" class="btn-small waves-effect waves-light">Go to my Grades</a>
         
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+    
+            M.Dropdown.init(elems, "alignment: bottom");
+        });
+    
+        var btn = document.getElementById('dropdown');
+        btn.addEventListener('click', () => btn.open());
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </body>
 </html>

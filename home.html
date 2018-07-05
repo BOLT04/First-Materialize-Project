@@ -1,0 +1,177 @@
+<html>
+
+<head>  
+    <!-- Bootstrap css -->
+    <!--
+    <link crossorigin='anonymous' integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M'
+        rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css'></link>
+    -->
+    <meta charset="UTF-8">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
+    <title>LS Project App</title>
+<style>
+    div.rightBoy {
+        width: 561px;
+        height: 500px;
+        background-color: blueviolet;
+        position: absolute;
+        top:87;
+        left:600
+    }
+    div.leftBoy {
+        width: 561px;
+        height: 500px;
+        background-color: royalblue;
+        position: absolute;
+        top:87;
+        left:6
+    }
+</style>
+</head>
+<body>
+    <nav class="nav-wrapper blue accent-4">
+        <div class="container"> 
+            <a href="#" class="center brand-logo">Ticket Management</a>
+
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn-large blue lighten-2 button2 waves-effect waves-light' href='#' data-target='dropdown'>Menu</a>
+            <div class="drop indigo">
+                <!-- Dropdown Structure -->
+                <ul id='dropdown' class='dropdown-content'>
+                    <li>
+                        <a href="/cinemas">Cinemas
+                            <i class="material-icons right">local_movies</i>    
+                        </a>                   
+                    </li>
+                    <li><a href="/movies">Movies
+                            <i class="material-icons">movie</i>
+                        </a>                    
+                    </li>
+                    <!--<li class="divider" tabindex="-1"></li>-->
+                    <li><a href="#!">Anime</a></li>
+                    <li><a href="#!">TV Shows
+                            <i class="material-icons">tv</i>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+<!--
+    <div class="media">
+        <div class="container"> 
+            <section class="index tv">
+                <h5>Tv shows....</h5>
+                
+            </section>
+            <section class="index movie">
+                <h2>Top 3 most Popular Movies</h5>
+                <div class="column">
+                    <div class="info second">
+                       
+                        <a href="/movie/260513">
+                            <img class="backdrop fade lazyautosizes lazyloaded" data-sizes="auto" data-src="https://image.tmdb.org/t/p/w250_and_h141_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg" data-srcset="https://image.tmdb.org/t/p/w250_and_h141_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg 1x, https://image.tmdb.org/t/p/w500_and_h282_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg 2x" alt="Os Incríveis 2" sizes="250px" srcset="https://image.tmdb.org/t/p/w250_and_h141_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg 1x, https://image.tmdb.org/t/p/w500_and_h282_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg 2x" src="https://image.tmdb.org/t/p/w250_and_h141_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg">
+                        </a>
+                        <span>
+                            <a class="text" href="/movie/260513">
+                                <h3>Os Incríveis 2</h3>
+                                <p>Craig T. Nelson, Holly Hunter</p>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+    </div> -->
+  <!--  
+    <div class="rightBoy">
+        <h5>oi leftt</h5>
+    </div>
+
+    <div class="rightBoy">
+        <h5>oi rig</h5>
+    </div>-->
+
+    <div class="container">
+            <div class="row yellow">
+                    <div class="col s12">
+                <img src="https://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg" data-sizes="auto" data-src="https://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg" data-srcset="https://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg 1x, https://image.tmdb.org/t/p/w1000_and_h563_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg 2x" alt="Mundo Jurássico: Reino Caído">                                                
+                        
+                    </div>
+                    <div class="col s6">6-columns (one-half)</div>
+                    <div class="col s6">6-columns (one-half)</div>
+                  </div>
+     
+        <div class="row right blue">
+            <div class="col s2 offset-s4" style="padding: 0;">
+                <img src="https://image.tmdb.org/t/p/w250_and_h141_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg" data-srcset="https://image.tmdb.org/t/p/w250_and_h141_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg 1x, https://image.tmdb.org/t/p/w500_and_h282_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg 2x" alt="Os Incríveis 2">
+                <span>
+                    <p class="center white-text" style="position: absolute;
+                    font-weight: bold;
+                    font-size: 20px;
+                    top: 39%;
+                    left: 75%;
+                    transform: translate(-50%, -50%);">
+                        Os Incríveis 2
+                    </p>
+                </span>
+            </div>
+            
+            <div class="col s3 offset-s3" style="padding: 0;">
+                <img data-sizes="auto" data-src="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg" data-srcset="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 1x, https://image.tmdb.org/t/p/w500_and_h282_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 2x" alt="Han Solo: Uma História de Star Wars" sizes="250px" srcset="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 1x, https://image.tmdb.org/t/p/w500_and_h282_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 2x" src="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg">                                
+                <span>
+                    <p class="center white-text" style="position: absolute;
+                    font-weight: bold;
+                    font-size: 20px;
+                    top: 39%;
+                    left: 75%;
+                    transform: translate(-50%, -50%);">
+                    Han Solo: Uma História de Star Wars
+                    </p>
+                </span>
+            </div>
+            <div class="col s12" style="padding: 0;">
+                <img src="httvps://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg" data-sizes="auto" data-src="https://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg" data-srcset="https://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg 1x, https://image.tmdb.org/t/p/w1000_and_h563_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg 2x" alt="Mundo Jurássico: Reino Caído">                                                
+                <span>
+                    <p class="center white-text" style="position: absolute;
+                    font-weight: bold;
+                    font-size: 20px;
+                    top: 39%;
+                    left: 75%;
+                    transform: translate(-50%, -50%);">
+                        Mundo Jurássico: Reino Caído
+                    </p>
+                </span>
+            </div>
+        </div>
+        <!--<div class="media">
+            <h4>Grids</h4>
+            <div class="row yellow">
+              <div class="col s3">content</div>
+              <div class="col s3">content</div>
+              <div class="col s3">content</div>
+              <div class="col s3">content</div>
+            </div>        
+        </div>-->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+    
+            M.Dropdown.init(elems, "alignment: bottom");
+        });
+    
+        var btn = document.getElementById('dropdown');
+        btn.addEventListener('click', () => btn.open());
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>

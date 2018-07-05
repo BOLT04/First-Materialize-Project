@@ -1,0 +1,108 @@
+<html>
+
+<head>  
+    <!-- Bootstrap css -->
+    <!--
+    <link crossorigin='anonymous' integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M'
+        rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css'></link>
+    -->
+    <meta charset="UTF-8">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
+    <title>LS Project App</title>
+<style>
+    .container-outer {
+        position: relative;
+
+        overflow: hidden;
+    }
+
+    .container-inner {
+        position: absolute;
+    }
+
+    .overlay {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+    <nav class="nav-wrapper blue accent-4">
+        <div class="container"> 
+            <a href="#" class="center brand-logo">Ticket Management</a>
+
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn-large blue lighten-2 button2 waves-effect waves-light' href='#' data-target='dropdown'>Menu</a>
+            <div class="drop indigo">
+                <!-- Dropdown Structure -->
+                <ul id='dropdown' class='dropdown-content'>
+                    <li>
+                        <a href="/cinemas">Cinemas
+                            <i class="material-icons right">local_movies</i>    
+                        </a>                   
+                    </li>
+                    <li><a href="/movies">Movies
+                            <i class="material-icons">movie</i>
+                        </a>                    
+                    </li>
+                    <!--<li class="divider" tabindex="-1"></li>-->
+                    <li><a href="#!">Anime</a></li>
+                    <li><a href="#!">TV Shows
+                            <i class="material-icons">tv</i>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+   <div class="container">
+        <p class="flow-text orange-text">Top 3 most <strong>popular</strong> movies</p>
+        <div class="row">
+            <div class="col s12" style="padding:0">
+            
+                <img src="https://image.tmdb.org/t/p/w500/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg" data-sizes="auto" data-src="https://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg" data-srcset="https://image.tmdb.org/t/p/w500_and_h282_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg 1x, https://image.tmdb.org/t/p/w1000_and_h563_face/gBmrsugfWpiXRh13Vo3j0WW55qD.jpg 2x" alt="Mundo Jurássico: Reino Caído">                                                
+            oi
+            </div>
+            <div class="col" style="padding:0">
+                <div class="container-outer">
+                    <img src="https://image.tmdb.org/t/p/w250_and_h141_face/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg" alt="Os Incríveis 2">
+                    
+                </div> 
+                <!--<span>
+                        <p class="center black-text" style="position: absolute;
+                        font-weight: bold;
+                        font-size: 20px;
+                        top: 71%;
+                        left: 24%;
+                        transform: translate(-50%, -50%);">
+                            Os Incríveis 2
+                        </p>
+                    </span>-->
+            </div>
+            <div class="col" style="padding:0">               
+                <img data-sizes="auto" data-src="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg" data-srcset="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 1x, https://image.tmdb.org/t/p/w500_and_h282_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 2x" alt="Han Solo: Uma História de Star Wars" sizes="250px" srcset="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 1x, https://image.tmdb.org/t/p/w500_and_h282_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg 2x" src="https://image.tmdb.org/t/p/w250_and_h141_face/7LZ0K4FsALrt7OeNIGOVLNuKQRU.jpg">                                
+            </div>
+          </div>
+        </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+    
+            M.Dropdown.init(elems, "alignment: bottom");
+        });
+    
+        var btn = document.getElementById('dropdown');
+        btn.addEventListener('click', () => btn.open());
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>
